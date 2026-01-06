@@ -1,0 +1,10 @@
+/*Get a single number and print its ASCII value*/
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    scanf("%c", &ch);
+    printf("%d", ch);
+    return 0;
+}
