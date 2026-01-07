@@ -1,5 +1,5 @@
 # C Programming Course by Balajee Seshadri
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/JAYAPRABHAGOKULKUMAR/C-programming-course-by-Balajee-Seshadri-sir.git)
+[![Github-Jayaprabha Gokul Kumar](https://github.com/logos)](https://github.com/JAYAPRABHAGOKULKUMAR/C-programming-course-by-Balajee-Seshadri-sir.git)
 
 This repository contains solutions to the programming assignments from the C programming course taught by Balajee Seshadri. The exercises are designed to build a strong foundation in C, progressing from basic syntax and logic to advanced data structures.
 
