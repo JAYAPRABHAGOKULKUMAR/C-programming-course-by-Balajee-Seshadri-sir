@@ -1,3 +1,4 @@
+/*Singly linked list, input until id = -1, then display all*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,44 +10,31 @@ struct student {
 };
 
 int main() {
-    struct student *head = NULL, *temp = NULL, *current = NULL;
-    int id, maths, science;
+    struct student *head = NULL, *temp, *newnode;
+    int id;
 
     while (1) {
-        printf("Enter Student ID (-1 to stop): ");
         scanf("%d", &id);
-
         if (id == -1)
             break;
 
-        printf("Enter Maths mark: ");
-        scanf("%d", &maths);
+        newnode = (struct student*)malloc(sizeof(struct student));
+        newnode->id = id;
+        scanf("%d %d", &newnode->Maths, &newnode->Science);
+        newnode->next = NULL;
 
-        printf("Enter Science mark: ");
-        scanf("%d", &science);
-
-        temp = (struct student*)malloc(sizeof(struct student));
-
-        temp->id = id;
-        temp->Maths = maths;
-        temp->Science = science;
-        temp->next = NULL;
-
-        if (head == NULL) {
-            head = temp;
-            current = temp;
-        } else {
-            current->next = temp;
-            current = temp;
+        if (head == NULL)
+            head = temp = newnode;
+        else {
+            temp->next = newnode;
+            temp = newnode;
         }
     }
 
-    printf("\nStudent Details:\n");
-    current = head;
-    while (current != NULL) {
-        printf("ID: %d | Maths: %d | Science: %d\n",
-               current->id, current->Maths, current->Science);
-        current = current->next;
+    temp = head;
+    while (temp) {
+        printf("%d %d %d\n", temp->id, temp->Maths, temp->Science);
+        temp = temp->next;
     }
 
     return 0;
