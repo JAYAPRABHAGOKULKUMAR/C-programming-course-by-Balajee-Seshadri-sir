@@ -4,7 +4,9 @@
 
 
 
-This repository contains solutions to the programming assignments from the C programming course taught by Balajee Seshadri. The exercises are designed to build a strong foundation in C, progressing from basic syntax and logic to advanced data structures.
+This repository contains well-structured solutions to the programming assignments from the C Programming course conducted by Balajee Seshadri. The exercises are thoughtfully designed to build a strong and disciplined foundation in the C programming language, guiding learners from core syntax and logical constructs to advanced topics such as pointers, memory management, and data structures.
+
+Balajee Seshadri’s teaching methodology emphasizes clarity, problem-solving rigor, and real-world programming practices. The progression of assignments reflects his deep expertise and commitment to helping students develop not just coding skills, but a solid understanding of how C works at a fundamental level. This repository stands as both a learning reference and a tribute to his structured and impactful approach to teaching C programming.
 
 ## Repository Structure
 
