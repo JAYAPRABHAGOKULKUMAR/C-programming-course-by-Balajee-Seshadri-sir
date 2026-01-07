@@ -1,5 +1,7 @@
 # C Programming Course by Balajee Seshadri
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/JAYAPRABHAGOKULKUMAR/C-programming-course-by-Balajee-Seshadri-sir)
+[![GitHub Repo](https://img.shields.io/badge/View%20on-GitHub-black?logo=github)](https://github.com/JAYAPRABHAGOKULKUMAR/C-programming-course-by-Balajee-Seshadri-sir)
+
 
 This repository contains solutions to the programming assignments from the C programming course taught by Balajee Seshadri. The exercises are designed to build a strong foundation in C, progressing from basic syntax and logic to advanced data structures.
 
