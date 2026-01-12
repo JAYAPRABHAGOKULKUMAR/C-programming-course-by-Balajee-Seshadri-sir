@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int board[8][8];
+
+int isSafe(int row, int col)
+{
+    for(int i = 0; i < row; i++)
+        if(board[i][col] == 1)
+            return 0;
+
+    for(int i = row, j = col; i >= 0 && j >= 0; i--, j--)
+        if(board[i][j] == 1)
+            return 0;
+
+    for(int i = row, j = col; i >= 0 && j < 8; i--, j++)
+        if(board[i][j] == 1)
+            return 0;
+
+    return 1;
+}
+
+int placeQueen(int row)
+{
+    if(row == 8)
+        return 1;
+
+    for(int col = 0; col < 8; col++)
+    {
+        if(isSafe(row, col))
+        {
+            board[row][col] = 1;
+
+            if(placeQueen(row + 1))
+                return 1;
+
+            board[row][col] = 0;
+        }
+    }
+    return 0;
+}
+
+int main()
+{
+    placeQueen(0);
+
+    for(int i = 0; i < 8; i++)
+    {
+        for(int j = 0; j < 8; j++)
+            printf("%d ", board[i][j]);
+        printf("\n");
+    }
+
+    return 0;
+}
